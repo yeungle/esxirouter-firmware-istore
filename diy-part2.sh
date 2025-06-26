@@ -35,11 +35,11 @@ cp -rf kenzok8-packages/ddnsto package/ddnsto
 cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
 cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
-cp -rf kenzok8-packages/adguardhome package/adguardhome
-cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
-cp -rf kenzok8-packages/smartdns package/smartdns
-cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
-cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
+#cp -rf kenzok8-packages/adguardhome package/adguardhome
+#cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+#cp -rf kenzok8-packages/smartdns package/smartdns
+#cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
+#cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
 rm -rf kenzok8-packages
 
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
