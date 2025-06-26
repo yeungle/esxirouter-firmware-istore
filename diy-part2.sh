@@ -32,21 +32,21 @@ rm -rf feeds/luci/applications/luci-app-passwall
 
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-git clone --depth=1 https://github.com/pymumu/smartdns package/smartdns
-git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
+#git clone --depth=1 https://github.com/pymumu/smartdns package/smartdns
+#git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 
-git clone --depth=1 https://github.com/AdguardTeam/AdGuardHome package/adguardhome
-git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+#git clone --depth=1 https://github.com/AdguardTeam/AdGuardHome package/adguardhome
+#git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
 cp -rf kenzok8-packages/ddnsto package/ddnsto
 cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
 cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
-#cp -rf kenzok8-packages/adguardhome package/adguardhome
-#cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
-#cp -rf kenzok8-packages/smartdns package/smartdns
-#cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
+cp -rf kenzok8-packages/adguardhome package/adguardhome
+cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+cp -rf kenzok8-packages/smartdns package/smartdns
+cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
 #cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
 rm -rf kenzok8-packages
 
