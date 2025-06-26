@@ -30,6 +30,8 @@ rm -rf feeds/luci/applications/luci-app-passwall
 
 #git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
 git clone --depth=1 https://github.com/pymumu/smartdns package/smartdns
 git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 
