@@ -61,3 +61,5 @@ git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-t
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
