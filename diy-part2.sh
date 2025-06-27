@@ -26,6 +26,8 @@ rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/packages/net/smartdns
 rm -rf feeds/luci/applications/luci-app-passwall
 
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+
 #git clone --depth=1 -b main https://github.com/fw876/helloworld.git package/helloworld
 
 #git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
@@ -36,23 +38,23 @@ rm -rf feeds/luci/applications/luci-app-passwall
 #git clone --depth=1 https://github.com/AdguardTeam/AdGuardHome package/adguardhome
 #git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 
-git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
-cp -rf kenzok8-packages/ddnsto package/ddnsto
-cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
-cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
-cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
-cp -rf kenzok8-packages/adguardhome package/adguardhome
-cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
-cp -rf kenzok8-packages/smartdns package/smartdns
-cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
-cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
-cp -rf kenzok8-packages/smartdns package/quickstart
-cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-quickstart
-cp -rf kenzok8-packages/luci-app-store package/luci-app-store
-cp -rf kenzok8-packages/luci-lib-taskd package/luci-lib-taskd
-cp -rf kenzok8-packages/taskd package/taskd
-cp -rf kenzok8-packages/luci-lib-xterm package/luci-lib-xterm
-rm -rf kenzok8-packages
+#git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
+#cp -rf kenzok8-packages/ddnsto package/ddnsto
+#cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
+#cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
+#cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
+#cp -rf kenzok8-packages/adguardhome package/adguardhome
+#cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+#cp -rf kenzok8-packages/smartdns package/smartdns
+#cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
+#cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
+#cp -rf kenzok8-packages/smartdns package/quickstart
+#cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-quickstart
+#cp -rf kenzok8-packages/luci-app-store package/luci-app-store
+#cp -rf kenzok8-packages/luci-lib-taskd package/luci-lib-taskd
+#cp -rf kenzok8-packages/taskd package/taskd
+#cp -rf kenzok8-packages/luci-lib-xterm package/luci-lib-xterm
+#rm -rf kenzok8-packages
 
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
