@@ -50,6 +50,8 @@ cp -rf kenzok8-packages/smartdns package/quickstart
 cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-quickstart
 cp -rf kenzok8-packages/luci-app-store package/luci-app-store
 cp -rf kenzok8-packages/luci-lib-taskd package/luci-lib-taskd
+cp -rf kenzok8-packages/taskd package/taskd
+cp -rf kenzok8-packages/luci-lib-xterm package/luci-lib-xterm
 rm -rf kenzok8-packages
 
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
