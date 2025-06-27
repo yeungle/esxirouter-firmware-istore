@@ -30,8 +30,6 @@ rm -rf feeds/luci/applications/luci-app-passwall
 
 #git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
 
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-
 #git clone --depth=1 https://github.com/pymumu/smartdns package/smartdns
 #git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 
@@ -47,7 +45,9 @@ cp -rf kenzok8-packages/adguardhome package/adguardhome
 cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
 cp -rf kenzok8-packages/smartdns package/smartdns
 cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
-#cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
+cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
+cp -rf kenzok8-packages/smartdns package/quickstart
+cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-quickstart
 rm -rf kenzok8-packages
 
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
