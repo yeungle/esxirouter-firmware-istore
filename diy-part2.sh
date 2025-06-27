@@ -49,7 +49,7 @@ cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
 cp -rf kenzok8-packages/smartdns package/quickstart
 cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-quickstart
 cp -rf kenzok8-packages/luci-app-store package/luci-app-store
-rm -rf kenzok8-packages
+#rm -rf kenzok8-packages
 
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
