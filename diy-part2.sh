@@ -27,6 +27,7 @@ rm -rf feeds/packages/net/smartdns
 rm -rf feeds/luci/applications/luci-app-passwall
 
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 
 #git clone --depth=1 -b main https://github.com/fw876/helloworld.git package/helloworld
 
@@ -62,4 +63,4 @@ git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-t
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
-rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+
