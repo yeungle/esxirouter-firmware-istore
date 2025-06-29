@@ -37,7 +37,7 @@ cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
 cp -rf kenzok8-packages/adguardhome package/adguardhome
 cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
-#cp -rf kenzok8-packages/smartdns package/smartdns
+cp -rf kenzok8-packages/smartdns package/smartdns
 #cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
 #cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
 cp -rf kenzok8-packages/quickstart package/quickstart
@@ -79,9 +79,9 @@ git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns.git luci
 cp -rf luci-app-smartdns package/luci-app-smartdns
 rm -rf luci-app-smartdns
 
-git clone --depth=1 https://github.com/pymumu/openwrt-smartdns smartdns
-cp -rf smartdns package/smartdns
-rm -rf smartdns
+#git clone --depth=1 https://github.com/pymumu/openwrt-smartdns smartdns
+#cp -rf smartdns package/smartdns
+#rm -rf smartdns
 
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
