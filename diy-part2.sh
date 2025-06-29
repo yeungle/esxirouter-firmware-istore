@@ -75,6 +75,14 @@ cp -rf openwrt-passwall-packages/xray-core package/xray-core
 cp -rf openwrt-passwall-packages/xray-plugin package/xray-plugin
 rm -rf openwrt-passwall-packages
 
+git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns.git luci-app-smartdns
+cp -rf luci-app-smartdns package/luci-app-smartdns
+rm -rf luci-app-smartdns
+
+git clone --depth=1 https://github.com/pymumu/openwrt-smartdns smartdns
+cp -rf smartdns package/smartdns
+rm -rf smartdns
+
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
