@@ -40,6 +40,14 @@ cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
 cp -rf kenzok8-packages/smartdns package/smartdns
 cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
 cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
+cp -rf kenzok8-packages/chinadns-ng package/chinadns-ng
+cp -rf kenzok8-packages/tcping package/tcping
+cp -rf kenzok8-packages/trojan-go package/trojan-go
+cp -rf kenzok8-packages/trojan-plus package/trojan-plus
+cp -rf kenzok8-packages/ssocks package/ssocks
+cp -rf kenzok8-packages/hysteria package/hysteria
+cp -rf kenzok8-packages/dns2tcp package/dns2tcp
+cp -rf kenzok8-packages/sing-box package/sing-box
 cp -rf kenzok8-packages/quickstart package/quickstart
 cp -rf kenzok8-packages/luci-app-quickstart package/luci-app-quickstart
 cp -rf kenzok8-packages/luci-app-store package/luci-app-store
