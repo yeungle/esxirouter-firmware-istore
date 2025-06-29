@@ -33,12 +33,16 @@ rm -rf feeds/luci/applications/luci-app-passwall
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
 cp -rf kenzok8-packages/ddnsto package/ddnsto
 cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
+
 cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
+
 cp -rf kenzok8-packages/adguardhome package/adguardhome
 cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+
 cp -rf kenzok8-packages/smartdns package/smartdns
 cp -rf kenzok8-packages/luci-app-smartdns package/luci-app-smartdns
+
 cp -rf kenzok8-packages/luci-app-passwall package/luci-app-passwall
 cp -rf kenzok8-packages/chinadns-ng package/chinadns-ng
 cp -rf kenzok8-packages/dns2socks package/dns2socks
@@ -61,6 +65,7 @@ cp -rf kenzok8-packages/v2ray-plugin package/v2ray-plugin
 cp -rf kenzok8-packages/xray-core package/xray-core
 cp -rf kenzok8-packages/xray-plugin package/xray-plugin
 cp -rf kenzok8-packages/dns2tcp package/dns2tcp
+
 cp -rf kenzok8-packages/quickstart package/quickstart
 cp -rf kenzok8-packages/luci-app-quickstart package/luci-app-quickstart
 cp -rf kenzok8-packages/luci-app-store package/luci-app-store
